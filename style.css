@@ -103,3 +103,31 @@ main {
     width: 140px;
   }
 }
+.feature-container{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+  gap:15px;
+  flex-wrap:nowrap;
+}
+
+.feature-card{
+  width:160px;
+}
+
+@media(max-width:600px){
+
+  .feature-container{
+    flex-direction:row;
+    overflow-x:auto;
+    justify-content:flex-start;
+    padding:10px;
+  }
+
+  .feature-card{
+    min-width:150px;
+    flex-shrink:0;
+  }
+
+}
