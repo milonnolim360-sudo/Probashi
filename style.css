@@ -3,7 +3,18 @@ margin:0;
   box-sizing:border-box;
 }
 
-body{
+body{ .hero{
+    width:100%;
+    overflow:hidden;
+}
+
+.hero img{
+    width:100%;
+    height:auto;
+    max-height:420px;
+    object-fit:cover;
+    display:block;
+
   background:#050505;
   color:white;
   font-family:sans-serif;
