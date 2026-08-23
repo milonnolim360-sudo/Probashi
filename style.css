@@ -38,3 +38,68 @@ main {
   max-width: 100%;
   object-fit: contain;
 }
+/* FEATURES AI 3D DESIGN */
+
+.features {
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #050505, #1a1a1a);
+  text-align: center;
+}
+
+.features h2 {
+  color: #ffd700;
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-shadow: 0 0 15px #ffd700;
+}
+
+.feature-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  width: 150px;
+  padding: 25px 15px;
+  text-decoration: none;
+  color: white;
+  background: rgba(255,255,255,0.08);
+  border: 2px solid #ffd700;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(255,215,0,0.5);
+  transform: perspective(500px);
+  animation: float 3s ease-in-out infinite;
+  transition: 0.4s;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px) rotateY(10deg);
+  box-shadow: 0 0 35px #ffd700;
+}
+
+.feature-card h3 {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.icon {
+  font-size: 45px;
+}
+
+@keyframes float {
+  0%,100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@media(max-width:600px){
+  .feature-card{
+    width: 140px;
+  }
+}
