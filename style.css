@@ -4,6 +4,13 @@ margin:0;
 }
 
 body{ .hero{
+body{
+    background:#050505;
+    color:white;
+    font-family:sans-serif;
+}
+
+.hero{
     width:100%;
     overflow:hidden;
 }
@@ -14,10 +21,7 @@ body{ .hero{
     max-height:420px;
     object-fit:cover;
     display:block;
-
-  background:#050505;
-  color:white;
-  font-family:sans-serif;
+}
 }
 
 /* FEATURES SECTION */
