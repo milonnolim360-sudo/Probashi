@@ -1,1 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
 
+<circle cx="250" cy="250" r="240" fill="#06245c" stroke="#ffd700" stroke-width="10"/>
+
+<circle cx="250" cy="250" r="180" fill="white"/>
+
+<text x="250" y="90" text-anchor="middle" 
+font-size="38" fill="#ffd700" font-weight="bold">
+বাংলাদেশ প্রবাসী মঞ্চ ফাউন্ডেশন
+</text>
+
+<text x="250" y="430" text-anchor="middle"
+font-size="28" fill="white" font-weight="bold">
+BANGLADESH PROBASHI MONCHO FOUNDATION
+</text>
+
+<circle cx="250" cy="250" r="90" fill="#008000"/>
+
+<text x="250" y="240" text-anchor="middle"
+font-size="55" fill="white">
+🌍
+</text>
+
+<text x="250" y="300" text-anchor="middle"
+font-size="35" fill="white">
+🤝
+</text>
+
+<path d="M120 360 Q250 430 380 360"
+stroke="#ffd700" stroke-width="8" fill="none"/>
+
+</svg>
