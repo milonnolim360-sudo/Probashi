@@ -3,141 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bangladesh Probashi Moncho Foundation</title>
+    <title>বাংলাদেশ প্রবাসী মঞ্চ ফাউন্ডেশন</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
     <style>
         body {
-            background: radial-gradient(circle, #001d3d 0%, #000000 100%);
-            color: white;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            text-align: center;
+            font-family: 'Hind Siliguri', sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
         }
 
-        .container {
-            max-width: 600px;
-            margin: auto;
-            border: 2px solid #d4af37;
-            padding: 20px;
-            border-radius: 20px;
-            background: rgba(0, 0, 0, 0.8);
-            box-shadow: 0 0 20px #d4af37;
+        /* হেডার ডিজাইন */
+        header {
+            background-color: white;
+            padding: 20px 10px;
+            text-align: center;
+            border-bottom: 5px solid #006a4e;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
-
-        .header img {
+        .logo {
             width: 100px;
-            animation: pulse 2s infinite;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            border: 2px solid #006a4e;
         }
+        .title-bn { font-size: 24px; font-weight: bold; color: #006a4e; margin: 0; }
+        .title-en { font-size: 14px; color: #f42a41; text-transform: uppercase; margin-top: 5px; font-weight: bold; }
 
-        h1 { color: #d4af37; text-shadow: 2px 2px 5px #000; font-size: 24px; }
-        h2 { color: #fff; font-size: 18px; margin-bottom: 30px; }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-        }
-
-        .feature-card {
-            background: linear-gradient(145deg, #1a1a1a, #000);
-            border: 1px solid #d4af37;
+        /* বিকাশ নম্বর সেকশন */
+        .bkash-box {
+            background: #d12053;
+            color: white;
+            margin: 15px;
             padding: 15px;
-            border-radius: 15px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 18px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .bkash-box b { font-size: 22px; }
+
+        /* ফিচার গ্রিড ডিজাইন (১৩টি ফিচার) */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .feature-item {
+            background: white;
+            padding: 15px 5px;
+            border-radius: 12px;
+            text-align: center;
             text-decoration: none;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            color: #333;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             transition: 0.3s;
-            animation: float 3s infinite ease-in-out;
+            border: 1px solid #ddd;
         }
+        .feature-item:hover { transform: translateY(-5px); border-color: #006a4e; }
+        .feature-item i { font-size: 30px; margin-bottom: 8px; color: #006a4e; }
+        .feature-item span { display: block; font-size: 13px; font-weight: bold; }
 
-        .feature-card:hover {
-            transform: scale(1.05);
-            background: #d4af37;
-            color: black;
+        /* ভিডিও সেকশন */
+        .video-gallery {
+            padding: 20px;
+            background: #fff;
+            margin-top: 20px;
         }
-
-        .bkash {
-            grid-column: span 2;
-            background: #e2136e;
-            border: none;
-            font-weight: bold;
-            font-size: 20px;
-        }
-
-        .whatsapp-section {
-            margin-top: 30px;
-            display: flex;
-            justify-content: space-around;
-        }
-
-        .wa-btn {
-            background: #25d366;
-            padding: 10px 20px;
-            border-radius: 50px;
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-        }
-
-        /* Animations */
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-            100% { transform: translateY(0px); }
-        }
-
-        @keyframes pulse {
-            0% { transform: scale(1); box-shadow: 0 0 0px #d4af37; }
-            50% { transform: scale(1.1); box-shadow: 0 0 20px #d4af37; }
-            100% { transform: scale(1); box-shadow: 0 0 0px #d4af37; }
-        }
-
-        .footer {
-            margin-top: 30px;
-            font-size: 14px;
-            color: #d4af37;
-        }
-    </style>
-</head>
-<body>
-
-<div class="container">
-    <div class="header">
-        <h1>বাংলাদেশ প্রবাসী মঞ্চ ফাউন্ডেশন</h1>
-        <h2>BANGLADESH PROBASHI MONCHO FOUNDATION</h2>
-        <p>স্থাপিত : 01.01.2026 | কলারাপুর মালয়েশিয়া</p>
-    </div>
-
-    <div class="grid">
-        <!-- bKash Feature -->
-        <a href="tel:+8801961704927" class="feature-card bkash">
-            <span>bKash Payment</span>
-            <span>+8801961704927</span>
-        </a>
-
-        <!-- Features -->
-        <a href="https://www.facebook.com/share/1AmwQ6uynF/" class="feature-card">Facebook Page</a>
-        <a href="https://www.youtube.com/@Bangladeshprobashifundclubf" class="feature-card">YouTube Channel</a>
-        <a href="https://tiktok.com/@md.rafik7854" class="feature-card">TikTok</a>
-        <a href="https://www.facebook.com/share/g/1LGXj4cECY/" class="feature-card">Facebook Group</a>
-        <a href="https://m.me/j/AbazuYGAWNXaKYj3/" class="feature-card">Messenger Group</a>
-        <a href="https://everify.bdris.gov.bd/" class="feature-card">BDRIS Verify</a>
-        <a href="https://www.expatservicesmy.com/ESKLPublicportal/Appointment/BookAppointment" class="feature-card">Expat Services</a>
-        <a href="https://chat.whatsapp.com/D09urUItfkdEjiVtqgIbY7" class="feature-card">WhatsApp Group</a>
-    </div>
-
-    <div class="whatsapp-section">
-        <a href="https://wa.me/8801928807515" class="wa-btn">Admin 1</a>
-        <a href="https://wa.me/message/FQOUHFGB6I3BG1" class="wa-btn">Admin 2</a>
-    </div>
-
-    <div class="footer">
-        <p>“ঐক্য • সেবা • উন্নয়ন”</p>
-        <p>Together We Build a Stronger Expat Community</p>
-    </div>
-</div>
-
-</body>
-</html>
+        .video-gallery h2 { tex
