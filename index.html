@@ -1,323 +1,226 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangladesh Probashi Moncho Foundation | Malaysia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
+        
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background: #f4f7f9; 
+            color: #1e293b; 
+            scroll-behavior: smooth;
+        }
 
-  <title>বাংলাদেশ প্রবাসী মঞ্চ ফাউন্ডেশন</title>
+        /* 3D Glass Effect */
+        .glass-ui { 
+            background: rgba(255, 255, 255, 0.8); 
+            backdrop-filter: blur(15px); 
+            border: 1px solid rgba(255, 255, 255, 0.4); 
+            box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+        }
 
-  <link rel="stylesheet" href="style.css">
+        /* Tricolor Progress Bar */
+        .tricolor-divider { 
+            height: 8px; 
+            background: linear-gradient(to right, #006a4e 33.3%, #f42a41 33.3%, #f42a41 66.6%, #ffffff 66.6%); 
+            width: 100%;
+        }
+
+        /* Marquee Animation */
+        .marquee-container {
+            background: #004d39;
+            color: white;
+            padding: 12px 0;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .marquee-content {
+            display: inline-block;
+            animation: marquee-scroll 30s linear infinite;
+        }
+        @keyframes marquee-scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        /* 3D Hover Cards */
+        .card-3d {
+            transition: all 0.3s ease;
+            border-radius: 20px;
+        }
+        .card-3d:hover {
+            transform: translateY(-10px) rotateX(2deg);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.2);
+        }
+
+        .gradient-text {
+            background: linear-gradient(45deg, #006a4e, #f42a41);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
 </head>
-
 <body>
 
-  <!-- =========================
-       HERO SECTION
-  ========================== -->
-  <section class="hero">
-
-    <img
-      src="./logo.png"
-      alt="বাংলাদেশ প্রবাসী মঞ্চ ফাউন্ডেশন Logo"
-      class="logo"
-    >
-
-    <h1>বাংলাদেশ প্রবাসী মঞ্চ ফাউন্ডেশন</h1>
-
-    <h2>
-      BANGLADESH PROBASHI MONCHO FOUNDATION
-    </h2>
-
-    <p>স্থান: কলারাপুর, মালয়েশিয়া</p>
-
-    <p>স্থাপিত: 01.01.2026</p>
-
-  </section>
-
-
-  <!-- =========================
-       FEATURES
-  ========================== -->
-  <section class="features">
-
-    <h2>FEATURES</h2>
-
-    <div class="feature-container">
-
-
-      <!-- Facebook Page -->
-      <a
-        href="https://www.facebook.com/share/1AmwQ6uynF/"
-        class="feature-card"
-        target="_blank"
-      >
-        <div class="feature-icon">📘</div>
-        <h3>Facebook Page</h3>
-        <p>ফেসবুক পেজ</p>
-      </a>
-
-
-      <!-- YouTube -->
-      <a
-        href="https://www.youtube.com/@Bangladeshprobashifundclubf"
-        class="feature-card"
-        target="_blank"
-      >
-        <div class="feature-icon">▶️</div>
-        <h3>YouTube</h3>
-        <p>ইউটিউব</p>
-      </a>
-
-
-      <!-- TikTok -->
-      <a
-        href="https://tiktok.com/@md.rafik7854"
-        class="feature-card"
-        target="_blank"
-      >
-        <div class="feature-icon">🎵</div>
-        <h3>TikTok</h3>
-        <p>টিকটক</p>
-      </a>
-
-
-      <!-- Facebook Group -->
-      <a
-        href="https://www.facebook.com/share/g/1LGXj4cECY/"
-        class="feature-card"
-        target="_blank"
-      >
-        <div class="feature-icon">👥</div>
-        <h3>Facebook Group</h3>
-        <p>ফেসবুক গ্রুপ</p>
-      </a>
-
-
-      <!-- Messenger Group -->
-      <a
-        href="https://m.me/j/AbazuYGAWNXaKYj3/?send_source=gc%3Acopy_invite_link_c"
-        class="feature-card"
-        target="_blank"
-      >
-        <div class="feature-icon">💬</div>
-        <h3>Messenger Group</h3>
-        <p>মেসেঞ্জার গ্রুপ</p>
-      </a>
-
-
-      <!-- WhatsApp Group -->
-      <a
-        href="https://chat.whatsapp.com/D09urUItfkdEjiVtqgIb7?s=cl&p=a&mlu=0"
-        class="feature-card"
-        target="_blank"
-      >
-        <div class="feature-icon">🟢</div>
-        <h3>WhatsApp Group</h3>
-        <p>হোয়াটসঅ্যাপ গ্রুপ</p>
-      </a>
-
-
-      <!-- BDRIS -->
-      <a
-        href="https://everify.bdris.gov.bd/"
-        class="feature-card"
-        target="_blank"
-      >
-        <div class="feature-icon">✅</div>
-        <h3>BDRIS Verify</h3>
-        <p>ভেরিফাই সেবা</p>
-      </a>
-
-
-      <!-- Expat Services -->
-      <a
-        href="https://www.expatservicesmy.com/ESKLPublicportal/Appointment/BookAppointment"
-        class="feature-card"
-        target="_blank"
-      >
-        <div class="feature-icon">🌐</div>
-        <h3>Expat Services</h3>
-        <p>প্রবাসী সেবা</p>
-      </a>
-
-
-      <!-- WhatsApp Contact -->
-      <a
-        href="https://wa.me/qr/5SBSJ55KMO7CB1"
-        class="feature-card"
-        target="_blank"
-      >
-        <div class="feature-icon">📞</div>
-        <h3>WhatsApp Contact</h3>
-        <p>হোয়াটসঅ্যাপ যোগাযোগ</p>
-      </a>
-
-
-      <!-- Contact -->
-      <a
-        href="https://wa.me/message/FQOUHFGB6I3BG1"
-        class="feature-card"
-        target="_blank"
-      >
-        <div class="feature-icon">✉️</div>
-        <h3>Contact</h3>
-        <p>যোগাযোগ</p>
-      </a>
-
-
-      <!-- Member Support -->
-      <a
-        href="https://wa.me/message/OJAZRSZSSECCK1"
-        class="feature-card"
-        target="_blank"
-      >
-        <div class="feature-icon">🤝</div>
-        <h3>Member Support</h3>
-        <p>সদস্য সহযোগিতা</p>
-      </a>
-
-
-      <!-- Training -->
-      <a
-        href="https://youtube.com/shorts/Uvav8yUb93c?si=37RCgKPiHowKmL9K"
-        class="feature-card"
-        target="_blank"
-      >
-        <div class="feature-icon">🎓</div>
-        <h3>Training</h3>
-        <p>প্রশিক্ষণ</p>
-      </a>
-
-
-      <!-- Community -->
-      <a
-        href="https://chat.whatsapp.com/HcEMStEP3un4uYDBBfH5b0?s=cl&p=a&mlu=0"
-        class="feature-card"
-        target="_blank"
-      >
-        <div class="feature-icon">🌍</div>
-        <h3>Community</h3>
-        <p>আমাদের কমিউনিটি</p>
-      </a>
-
+    <!-- TOP SECTION: Bismillah -->
+    <div class="text-center py-6 text-3xl font-bold bg-white" style="font-family: 'serif';">
+        بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ
     </div>
 
-  </section>
+    <!-- HEADER SECTION -->
+    <header class="glass-ui sticky top-0 z-50 border-b-2 border-gray-100">
+        <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center gap-6">
+            
+            <!-- Address Side -->
+            <div class="w-full md:w-1/4 text-center md:text-left">
+                <p class="text-xs font-black text-blue-600 uppercase tracking-widest">Headquarters</p>
+                <p class="text-sm font-bold">Kuala Lumpur, Malaysia</p>
+                <p class="text-xs text-gray-500">Postcode: 50480</p>
+            </div>
 
+            <!-- Title Side -->
+            <div class="w-full md:w-2/4 text-center">
+                <h1 class="text-2xl md:text-4xl font-black gradient-text uppercase tracking-tighter">
+                    Bangladesh Probashi Moncho Foundation
+                </h1>
+                <p class="text-sm font-black text-gray-600 mt-1">Estd: 01.01.2028</p>
+            </div>
 
-  <!-- =========================
-       VIDEO GALLERY
-  ========================== -->
-  <section class="video-gallery">
+            <!-- Logo Side -->
+            <div class="w-full md:w-1/4 flex justify-center md:justify-end">
+                <img src="https://i.ibb.co/Vp8LhLg/logo.jpg" alt="BPMF Logo" class="w-24 h-24 rounded-full border-4 border-yellow-500 shadow-xl card-3d">
+            </div>
+        </div>
+        <div class="tricolor-divider"></div>
+    </header>
 
-    <h2>VIDEO GALLERY</h2>
-
-    <div class="video-container">
-
-
-      <div class="video-card">
-        <a
-          href="https://youtu.be/KumLOhgtgsM?si=7gJ0peWBUkrjE7H8"
-          target="_blank"
-        >
-          <div class="video-placeholder">
-            ▶
-          </div>
-        </a>
-      </div>
-
-
-      <div class="video-card">
-        <a
-          href="https://youtu.be/DXB7gdJUlMw?si=5ZS1RtX6bYGatI7q"
-          target="_blank"
-        >
-          <div class="video-placeholder">
-            ▶
-          </div>
-        </a>
-      </div>
-
-
-      <div class="video-card">
-        <a
-          href="https://youtu.be/I2mc2RXCEIA?si=Peogg4qe6olJMPdI"
-          target="_blank"
-        >
-          <div class="video-placeholder">
-            ▶
-          </div>
-        </a>
-      </div>
-
-
-      <div class="video-card">
-        <a
-          href="https://youtube.com/shorts/Uvav8yUb93c?si=37RCgKPiHowKmL9K"
-          target="_blank"
-        >
-          <div class="video-placeholder">
-            ▶
-          </div>
-        </a>
-      </div>
-
+    <!-- SOCIAL MARQUEE -->
+    <div class="marquee-container shadow-md">
+        <div class="marquee-content flex gap-12 font-bold uppercase text-sm">
+            <a href="https://www.facebook.com/share/1AmwQ6uynF/" target="_blank"><i class="fab fa-facebook"></i> Facebook Page</a>
+            <a href="https://www.youtube.com/@Bangladeshprobashifundclubf" target="_blank"><i class="fab fa-youtube"></i> YouTube Channel</a>
+            <a href="https://www.facebook.com/share/g/1LGXj4cECY/" target="_blank"><i class="fas fa-users"></i> Facebook Group</a>
+            <a href="https://tiktok.com/@md.rafik7854" target="_blank"><i class="fab fa-tiktok text-black"></i> TikTok</a>
+            <a href="https://m.me/j/AbazuYGAWNXaKYj3/" target="_blank"><i class="fab fa-facebook-messenger"></i> Messenger Group</a>
+            <span><i class="fas fa-shield-alt"></i> Serving Humanity Globally</span>
+        </div>
     </div>
 
-  </section>
+    <!-- MAIN CONTENT -->
+    <main class="container mx-auto px-4 py-12">
 
+        <!-- GOVT SERVICES SECTION -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <a href="https://everify.bdris.gov.bd/" target="_blank" class="card-3d glass-ui p-8 flex items-center justify-between border-l-8 border-green-600">
+                <div>
+                    <h3 class="text-xl font-black text-green-700 uppercase">Birth Certificate</h3>
+                    <p class="text-sm text-gray-500">Online Verification (BDRIS)</p>
+                </div>
+                <i class="fas fa-id-card text-4xl text-green-600 opacity-30"></i>
+            </a>
+            <a href="https://www.expatservicesmy.com/ESKLPublicportal/Appointment/BookAppointment" target="_blank" class="card-3d glass-ui p-8 flex items-center justify-between border-l-8 border-red-600">
+                <div>
+                    <h3 class="text-xl font-black text-red-700 uppercase">Passport Appointment</h3>
+                    <p class="text-sm text-gray-500">Expat Services Malaysia (ESKL)</p>
+                </div>
+                <i class="fas fa-passport text-4xl text-red-600 opacity-30"></i>
+            </a>
+        </div>
 
-  <!-- =========================
-       WHATSAPP CONTACT
-       1 - 2 - 3
-  ========================== -->
-  <section class="whatsapp">
+        <!-- VIDEO GALLERY -->
+        <h2 class="text-3xl font-black mb-8 border-l-8 border-blue-600 pl-4 uppercase tracking-tight">Activity Gallery</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+            <div class="glass-ui rounded-3xl overflow-hidden h-64 card-3d">
+                <iframe class="w-full h-full" src="https://www.youtube.com/embed?listType=user_uploads&list=Bangladeshprobashifundclubf" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="glass-ui rounded-3xl overflow-hidden h-64 card-3d flex items-center justify-center bg-gray-50">
+                <i class="fas fa-video text-gray-200 text-6xl"></i>
+            </div>
+            <div class="glass-ui rounded-3xl overflow-hidden h-64 card-3d flex items-center justify-center bg-gray-50">
+                <i class="fas fa-video text-gray-200 text-6xl"></i>
+            </div>
+            <div class="glass-ui rounded-3xl overflow-hidden h-64 card-3d flex items-center justify-center bg-gray-50">
+                <i class="fas fa-video text-gray-200 text-6xl"></i>
+            </div>
+        </div>
 
-    <h2>WHATSAPP CONTACT</h2>
+        <!-- PAYMENTS & COMMUNITY -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 mb-20">
+            <!-- bKash -->
+            <div class="card-3d glass-ui p-10 border-b-8 border-pink-500">
+                <div class="flex items-center gap-4 mb-6">
+                    <i class="fas fa-mobile-alt text-4xl text-pink-500"></i>
+                    <h3 class="text-2xl font-black text-pink-600 uppercase">bKash Pay</h3>
+                </div>
+                <div class="bg-pink-600 text-white p-6 rounded-2xl text-center">
+                    <p class="text-xs uppercase font-bold opacity-80 mb-1">Personal Number</p>
+                    <p class="text-2xl font-black">+8801961704927</p>
+                </div>
+            </div>
 
-    <div class="whatsapp-buttons">
+            <!-- TnG -->
+            <div class="card-3d glass-ui p-10 border-b-8 border-blue-500 text-center">
+                <h3 class="text-2xl font-black text-blue-700 uppercase mb-6">Malaysia QR Pay</h3>
+                <img src="https://i.ibb.co/68ZfSpt/tng-qr.jpg" alt="TnG QR" class="w-44 mx-auto rounded-xl shadow-lg mb-4">
+                <p class="font-black text-gray-700 tracking-widest">SARDAR MD RAFIK</p>
+            </div>
 
-      <a
-        href="https://wa.me/qr/5SBSJ55KMO7CB1"
-        target="_blank"
-      >
-        WhatsApp 1
-      </a>
+            <!-- WhatsApp Groups -->
+            <div class="card-3d glass-ui p-10 border-b-8 border-green-600">
+                <h3 class="text-2xl font-black text-green-700 uppercase mb-6">Our Communities</h3>
+                <div class="flex flex-col gap-4">
+                    <a href="https://chat.whatsapp.com/D09urUItfkdEjiVtqgIbY7" class="bg-green-600 text-white py-3 rounded-xl text-center font-bold hover:bg-green-700 transition shadow-lg">WhatsApp Group 01</a>
+                    <a href="https://chat.whatsapp.com/HcEMStEP3un4uYDBBfH5b0" class="bg-green-600 text-white py-3 rounded-xl text-center font-bold hover:bg-green-700 transition shadow-lg">WhatsApp Group 02</a>
+                    <a href="https://chat.whatsapp.com/Jl7W0RXQjEI7Mhgj5riBhu" class="bg-green-600 text-white py-3 rounded-xl text-center font-bold hover:bg-green-700 transition shadow-lg">WhatsApp Group 03</a>
+                </div>
+            </div>
+        </div>
 
-      <a
-        href="https://wa.me/message/FQOUHFGB6I3BG1"
-        target="_blank"
-      >
-        WhatsApp 2
-      </a>
+        <!-- CONTACT SECTION -->
+        <div class="glass-ui p-12 rounded-[50px] text-center shadow-2xl">
+            <h2 class="text-4xl font-black text-gray-800 mb-12 uppercase tracking-tighter">Emergency Contacts</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <a href="https://wa.me/qr/5SBSJ55KMO7CB1" class="group">
+                    <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition">
+                        <i class="fab fa-whatsapp text-4xl text-green-600"></i>
+                    </div>
+                    <p class="font-black text-lg">Contact Admin 1</p>
+                </a>
+                <a href="https://wa.me/message/FQOUHFGB6I3BG1" class="group">
+                    <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition">
+                        <i class="fab fa-whatsapp text-4xl text-green-600"></i>
+                    </div>
+                    <p class="font-black text-lg">Contact Admin 2</p>
+                </a>
+                <a href="https://wa.me/message/OJAZRSZSSECCK1" class="group">
+                    <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition">
+                        <i class="fab fa-whatsapp text-4xl text-green-600"></i>
+                    </div>
+                    <p class="font-black text-lg">Contact Admin 3</p>
+                </a>
+            </div>
+        </div>
 
-      <a
-        href="https://wa.me/message/OJAZRSZSSECCK1"
-        target="_blank"
-      >
-        WhatsApp 3
-      </a>
+    </main>
 
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       FOOTER
-  ========================== -->
-  <footer>
-
-    <p>
-      © 2026 বাংলাদেশ প্রবাসী মঞ্চ ফাউন্ডেশন
-    </p>
-
-    <p>
-      ঐক্য • সেবা • উন্নয়ন
-    </p>
-
-  </footer>
-
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl font-black mb-4 tracking-widest uppercase">Bangladesh Probashi Moncho Foundation</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto mb-8">Established to serve the Bangladeshi community in Malaysia and beyond. Together we stand for humanity and progress.</p>
+            <div class="flex justify-center gap-6 mb-8 text-2xl">
+                <a href="#" class="hover:text-blue-500"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="hover:text-red-500"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="hover:text-pink-500"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="text-gray-500 text-xs font-bold">&copy; 2028 BPMF. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
