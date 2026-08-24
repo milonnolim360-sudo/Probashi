@@ -10,9 +10,8 @@ html {
 }
 
 body {
-  background:
-    radial-gradient(circle at top, #211900 0%, #050505 35%, #000 75%);
-  color: #fff;
+  background: #f3f6f4;
+  color: #222;
   text-align: center;
   overflow-x: hidden;
 }
@@ -24,9 +23,9 @@ body {
 .hero {
   padding: 25px 15px 35px;
   background:
-    radial-gradient(circle at center, rgba(255, 215, 0, 0.10), transparent 55%),
-    linear-gradient(180deg, #080808, #151515, #050505);
-  border-bottom: 1px solid rgba(255, 215, 0, 0.25);
+    radial-gradient(circle at center, rgba(255, 215, 0, 0.12), transparent 55%),
+    linear-gradient(180deg, #ffffff, #f2f5f3);
+  border-bottom: 2px solid #d6b52a;
   position: relative;
   overflow: hidden;
 }
@@ -47,13 +46,11 @@ body {
 
 @keyframes heroGlow {
   from {
-    opacity: 0.4;
-    transform: translateX(-50%) scale(0.9);
+    opacity: 0.35;
   }
 
   to {
-    opacity: 0.9;
-    transform: translateX(-50%) scale(1.15);
+    opacity: 0.8;
   }
 }
 
@@ -67,19 +64,8 @@ body {
   position: relative;
   z-index: 2;
   filter:
-    drop-shadow(0 0 8px #ffd700)
-    drop-shadow(0 0 25px rgba(255, 215, 0, 0.8));
-  animation: logoFloat 4s ease-in-out infinite;
-}
-
-@keyframes logoFloat {
-  0%, 100% {
-    transform: translateY(0) rotate(0deg);
-  }
-
-  50% {
-    transform: translateY(-8px) rotate(2deg);
-  }
+    drop-shadow(0 0 8px rgba(255, 215, 0, 0.7))
+    drop-shadow(0 0 20px rgba(255, 215, 0, 0.35));
 }
 
 /* =========================
@@ -87,14 +73,13 @@ body {
 ========================= */
 
 .hero h1 {
-  color: #ffd700;
+  color: #e0ad00;
   font-size: 30px;
   line-height: 1.35;
   margin: 5px 0 10px;
   text-shadow:
-    0 0 5px #ffd700,
-    0 0 15px #ffd700,
-    0 0 30px rgba(255, 215, 0, 0.65);
+    0 2px 4px rgba(120, 90, 0, 0.25),
+    0 0 12px rgba(255, 215, 0, 0.35);
   position: relative;
   z-index: 2;
 }
@@ -104,12 +89,11 @@ body {
 ========================= */
 
 .hero h2 {
-  color: #fff;
+  color: #333;
   font-size: 25px;
   line-height: 1.3;
   margin-top: 5px;
-  text-shadow:
-    0 0 10px rgba(255, 255, 255, 0.25);
+  text-shadow: none;
   position: relative;
   z-index: 2;
 }
@@ -119,7 +103,7 @@ body {
 ========================= */
 
 .hero p {
-  color: #ddd;
+  color: #666;
   font-size: 16px;
   line-height: 1.6;
   margin-top: 5px;
@@ -134,36 +118,23 @@ body {
 .features {
   padding: 40px 25px 50px;
   background:
-    radial-gradient(circle at center, rgba(255, 215, 0, 0.08), transparent 55%);
+    linear-gradient(180deg, #f3f6f4, #ffffff);
 }
 
 .features h2,
 .video h2,
+.video-gallery h2,
 .whatsapp h2 {
-  color: #ffd700;
+  color: #079447;
   font-size: 34px;
   margin-bottom: 30px;
   text-shadow:
-    0 0 7px #ffd700,
-    0 0 18px rgba(255, 215, 0, 0.85),
-    0 0 35px rgba(255, 215, 0, 0.4);
-  animation: titleGlow 2.5s ease-in-out infinite alternate;
+    0 2px 5px rgba(0, 120, 70, 0.18);
 }
 
-@keyframes titleGlow {
-  from {
-    text-shadow:
-      0 0 5px #ffd700,
-      0 0 12px rgba(255, 215, 0, 0.5);
-  }
-
-  to {
-    text-shadow:
-      0 0 10px #ffd700,
-      0 0 25px #ffd700,
-      0 0 45px rgba(255, 215, 0, 0.6);
-  }
-}
+/* =========================
+   FEATURE GRID
+========================= */
 
 .feature-container {
   display: grid;
@@ -180,31 +151,32 @@ body {
 .feature-card {
   min-height: 145px;
   padding: 20px 10px;
+
   background:
-    radial-gradient(circle at center, rgba(255, 215, 0, 0.10), transparent 60%),
-    linear-gradient(145deg, #181818, #080808);
-  border: 2px solid #ffd700;
+    linear-gradient(145deg, #101712, #050806);
+
+  border: 2px solid #d4af37;
   border-radius: 20px;
+
   text-decoration: none;
   color: #fff;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   position: relative;
   overflow: hidden;
 
   box-shadow:
-    0 0 8px rgba(255, 215, 0, 0.45),
-    0 0 20px rgba(255, 215, 0, 0.25),
-    inset 0 0 15px rgba(255, 215, 0, 0.08);
+    0 5px 18px rgba(0, 0, 0, 0.28),
+    0 0 8px rgba(212, 175, 55, 0.25);
 
   transition:
-    transform 0.35s ease,
-    box-shadow 0.35s ease,
-    border-color 0.35s ease;
-
-  animation: cardAppear 0.8s ease both;
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
 }
 
 .feature-card::before {
@@ -212,73 +184,31 @@ body {
   position: absolute;
   width: 90px;
   height: 90px;
-  background: rgba(255, 215, 0, 0.20);
+  background: rgba(255, 215, 0, 0.12);
   border-radius: 50%;
   filter: blur(25px);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0.5;
   pointer-events: none;
 }
 
-.feature-card::after {
-  content: "";
-  position: absolute;
-  width: 180%;
-  height: 2px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 215, 0, 0.9),
-    transparent
-  );
-  top: 0;
-  left: -40%;
-  animation: cardShine 4s linear infinite;
-}
-
-@keyframes cardShine {
-  0% {
-    transform: translateX(-50%) rotate(25deg);
-  }
-
-  100% {
-    transform: translateX(80%) rotate(25deg);
-  }
-}
-
-@keyframes cardAppear {
-  from {
-    opacity: 0;
-    transform: translateY(20px) scale(0.95);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
 .feature-card:hover {
-  transform: translateY(-8px) scale(1.04);
-  border-color: #fff0a0;
+  transform: translateY(-6px);
+  border-color: #ffe27a;
+
   box-shadow:
-    0 0 12px #ffd700,
-    0 0 30px rgba(255, 215, 0, 0.75),
-    0 0 60px rgba(255, 215, 0, 0.25),
-    inset 0 0 20px rgba(255, 215, 0, 0.12);
+    0 8px 25px rgba(0, 0, 0, 0.35),
+    0 0 18px rgba(255, 215, 0, 0.45);
 }
 
 /* =========================
-   FEATURE ICON
+   ICON
 ========================= */
 
 .feature-icon {
   font-size: 38px;
   margin-bottom: 12px;
-  position: relative;
-  z-index: 2;
 
   width: 58px;
   height: 58px;
@@ -290,30 +220,14 @@ body {
   border-radius: 50%;
 
   background:
-    radial-gradient(circle, #fff2a0 0%, #ffd700 35%, #a87500 100%);
+    radial-gradient(circle, #fff4a8 0%, #ffd700 42%, #c39200 100%);
 
   box-shadow:
-    0 0 10px #ffd700,
-    0 0 25px rgba(255, 215, 0, 0.75),
-    inset 0 0 8px rgba(255, 255, 255, 0.7);
+    0 4px 12px rgba(0, 0, 0, 0.3),
+    0 0 18px rgba(255, 215, 0, 0.5);
 
-  animation: iconPulse 2.5s ease-in-out infinite;
-}
-
-@keyframes iconPulse {
-  0%, 100% {
-    transform: scale(1);
-    box-shadow:
-      0 0 8px #ffd700,
-      0 0 20px rgba(255, 215, 0, 0.55);
-  }
-
-  50% {
-    transform: scale(1.08);
-    box-shadow:
-      0 0 15px #ffd700,
-      0 0 35px rgba(255, 215, 0, 0.85);
-  }
+  position: relative;
+  z-index: 2;
 }
 
 .feature-card h3 {
@@ -325,7 +239,7 @@ body {
 }
 
 .feature-card p {
-  color: #fff;
+  color: #ddd;
   font-size: 14px;
   line-height: 1.5;
   margin-top: 3px;
@@ -337,10 +251,11 @@ body {
    VIDEO GALLERY
 ========================= */
 
+.video-gallery,
 .video {
   padding: 40px 25px;
   background:
-    linear-gradient(180deg, #030303, #101010, #030303);
+    linear-gradient(180deg, #07100a, #101812, #07100a);
 }
 
 .video-container {
@@ -353,24 +268,27 @@ body {
 
 .video-card {
   height: 180px;
-  border: 2px solid #ffd700;
+
+  border: 2px solid #d4af37;
   border-radius: 15px;
+
   overflow: hidden;
-  background: #000;
+  background: #050505;
   position: relative;
 
   box-shadow:
-    0 0 8px rgba(255, 215, 0, 0.45),
-    0 0 20px rgba(255, 215, 0, 0.18);
+    0 5px 18px rgba(0, 0, 0, 0.35),
+    0 0 10px rgba(212, 175, 55, 0.25);
 
-  transition: 0.35s ease;
+  transition: 0.3s ease;
 }
 
 .video-card:hover {
-  transform: translateY(-6px) scale(1.02);
+  transform: translateY(-5px);
+
   box-shadow:
-    0 0 15px #ffd700,
-    0 0 30px rgba(255, 215, 0, 0.6);
+    0 8px 25px rgba(0, 0, 0, 0.4),
+    0 0 18px rgba(255, 215, 0, 0.45);
 }
 
 .video-card a {
@@ -382,8 +300,9 @@ body {
 .video-placeholder {
   width: 100%;
   height: 100%;
+
   background:
-    radial-gradient(circle, rgba(255, 215, 0, 0.12), transparent 55%),
+    radial-gradient(circle, rgba(255, 215, 0, 0.15), transparent 55%),
     #050505;
 
   display: flex;
@@ -396,9 +315,12 @@ body {
 
 .video-placeholder::after {
   content: "▶";
+
   width: 65px;
   height: 65px;
+
   border-radius: 50%;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -407,20 +329,8 @@ body {
   background: #ffd700;
 
   box-shadow:
-    0 0 10px #ffd700,
-    0 0 30px rgba(255, 215, 0, 0.8);
-
-  animation: playPulse 2s ease-in-out infinite;
-}
-
-@keyframes playPulse {
-  0%, 100% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.1);
-  }
+    0 0 12px #ffd700,
+    0 0 25px rgba(255, 215, 0, 0.55);
 }
 
 .video iframe {
@@ -431,14 +341,14 @@ body {
 }
 
 /* =========================
-   WHATSAPP CONTACT
+   WHATSAPP
 ========================= */
 
 .whatsapp {
   padding: 40px 20px 50px;
+
   background:
-    radial-gradient(circle at center, rgba(255, 215, 0, 0.08), transparent 55%),
-    #090909;
+    linear-gradient(180deg, #ffffff, #f3f6f4);
 }
 
 .whatsapp-buttons {
@@ -457,26 +367,26 @@ body {
   min-width: 115px;
   padding: 12px 20px;
 
-  background: linear-gradient(145deg, #fff08a, #ffd700, #d49f00);
-  color: #000;
+  background:
+    linear-gradient(145deg, #fff08a, #ffd700, #d49f00);
+
+  color: #111;
 
   border-radius: 30px;
   text-decoration: none;
+
   font-weight: bold;
   font-size: 14px;
 
   box-shadow:
-    0 0 8px #ffd700,
-    0 0 20px rgba(255, 215, 0, 0.6);
+    0 5px 15px rgba(0, 0, 0, 0.2),
+    0 0 12px rgba(255, 215, 0, 0.4);
 
   transition: 0.3s ease;
 }
 
 .whatsapp-buttons a:hover {
-  transform: translateY(-5px) scale(1.05);
-  box-shadow:
-    0 0 15px #ffd700,
-    0 0 35px rgba(255, 215, 0, 0.85);
+  transform: translateY(-4px);
 }
 
 /* =========================
@@ -485,8 +395,10 @@ body {
 
 footer {
   padding: 25px 15px;
-  background: #020202;
-  border-top: 1px solid rgba(255, 215, 0, 0.2);
+
+  background: #07100a;
+
+  border-top: 2px solid #d4af37;
 }
 
 footer p {
@@ -535,21 +447,18 @@ footer p {
     margin-bottom: 12px;
   }
 
-  /* বাংলা কোম্পানির নাম */
   .hero h1 {
     font-size: 24px;
     line-height: 1.35;
     margin-bottom: 8px;
   }
 
-  /* English name */
   .hero h2 {
     font-size: 21px;
     line-height: 1.3;
     margin-top: 4px;
   }
 
-  /* ঠিকানা + স্থাপিত */
   .hero p {
     font-size: 15px;
     line-height: 1.55;
@@ -557,6 +466,7 @@ footer p {
   }
 
   .features,
+  .video-gallery,
   .video,
   .whatsapp {
     padding-left: 15px;
@@ -564,6 +474,7 @@ footer p {
   }
 
   .features h2,
+  .video-gallery h2,
   .video h2,
   .whatsapp h2 {
     font-size: 30px;
@@ -611,28 +522,4 @@ footer p {
    SMALL MOBILE
 ========================= */
 
-@media (max-width: 380px) {
-
-  .feature-container,
-  .video-container {
-    grid-template-columns: 1fr;
-  }
-
-  .hero h1 {
-    font-size: 22px;
-  }
-
-  .hero h2 {
-    font-size: 20px;
-  }
-
-  .hero p {
-    font-size: 14px;
-  }
-
-  .features h2,
-  .video h2,
-  .whatsapp h2 {
-    font-size: 27px;
-  }
-}
+@media (max-width: 
