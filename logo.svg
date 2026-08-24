@@ -1,32 +1,141 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<circle cx="250" cy="250" r="240" fill="#06245c" stroke="#ffd700" stroke-width="10"/>
+<title>বাংলাদেশ প্রবাসী মঞ্চ ফাউন্ডেশন</title>
 
-<circle cx="250" cy="250" r="180" fill="white"/>
+<link rel="stylesheet" href="style.css">
 
-<text x="250" y="90" text-anchor="middle" 
-font-size="38" fill="#ffd700" font-weight="bold">
-বাংলাদেশ প্রবাসী মঞ্চ ফাউন্ডেশন
-</text>
+</head>
 
-<text x="250" y="430" text-anchor="middle"
-font-size="28" fill="white" font-weight="bold">
-BANGLADESH PROBASHI MONCHO FOUNDATION
-</text>
+<body>
 
-<circle cx="250" cy="250" r="90" fill="#008000"/>
+<header>
 
-<text x="250" y="240" text-anchor="middle"
-font-size="55" fill="white">
-🌍
-</text>
+<img src="logo.png" class="logo">
 
-<text x="250" y="300" text-anchor="middle"
-font-size="35" fill="white">
-🤝
-</text>
+<h1>বাংলাদেশ প্রবাসী মঞ্চ ফাউন্ডেশন</h1>
 
-<path d="M120 360 Q250 430 380 360"
-stroke="#ffd700" stroke-width="8" fill="none"/>
+<h2>BANGLADESH PROBASHI MONCHO FOUNDATION</h2>
 
-</svg>
+<p>স্থান: কলারাপুর, মালয়েশিয়া</p>
+
+<p>স্থাপিত: 01.01.2026</p>
+
+</header>
+
+
+<section class="features">
+
+<h3>FEATURES</h3>
+
+<div class="grid">
+
+
+<a href="https://www.facebook.com/share/1AmwQ6uynF/">
+Facebook Page
+</a>
+
+
+<a href="https://www.youtube.com/@Bangladeshprobashifundclubf">
+YouTube
+</a>
+
+
+<a href="https://www.tiktok.com/@md.rafik7854">
+TikTok
+</a>
+
+
+<a href="https://www.facebook.com/share/g/1LGXj4cECY/">
+Facebook Group
+</a>
+
+
+<a href="https://m.me/j/AbazuYGAWNXaKYj3/">
+Messenger Group
+</a>
+
+
+<a href="https://chat.whatsapp.com/D09urUItfkdEjiVtqgIb7">
+WhatsApp Group
+</a>
+
+
+<a href="https://everify.bdris.gov.bd/">
+BDRIS Verify
+</a>
+
+
+<a href="https://www.expatservicesmy.com/ESKLPublicportal/Appointment/BookAppointment">
+Expat Services
+</a>
+
+
+<a href="https://wa.me/qr/5SBSJ55KMO7CB1">
+WhatsApp Contact
+</a>
+
+
+<a href="#">
+Contact
+</a>
+
+
+<a href="#">
+Member Support
+</a>
+
+
+<a href="#">
+Training
+</a>
+
+
+<a href="#">
+Community
+</a>
+
+
+</div>
+
+</section>
+
+
+
+<section class="videos">
+
+<h3>VIDEO GALLERY</h3>
+
+
+<iframe src="https://www.youtube.com/embed/Uvav8yUb93c"></iframe>
+
+<iframe src="https://www.youtube.com/embed/KumLOhgtgsM"></iframe>
+
+<iframe src="https://www.youtube.com/embed/DXB7gdJUlMw"></iframe>
+
+<iframe src="https://www.youtube.com/embed/I2mc2RXCEIA"></iframe>
+
+
+</section>
+
+
+
+<section class="whatsapp">
+
+<h3>WHATSAPP CONTACT</h3>
+
+<a href="https://wa.me/qr/5SBSJ55KMO7CB1">WhatsApp 1</a>
+
+<a href="https://wa.me/message/FQOUHFGB6I3BG1">WhatsApp 2</a>
+
+<a href="https://wa.me/message/OJAZRSZSSECCK1">WhatsApp 3</a>
+
+
+</section>
+
+
+</body>
+</html>
