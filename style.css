@@ -1,253 +1,154 @@
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
 }
 
 body{
-background:#050505;
-color:white;
-font-family:sans-serif;
+  background:#050505;
+  color:white;
+  text-align:center;
 }
 
-
-/* HERO */
-
 .hero{
-width:100%;
-overflow:hidden;
+  padding:25px 15px;
+  background:linear-gradient(180deg,#000,#111);
 }
 
 .hero img{
-width:100%;
-height:auto;
-display:block;
-object-fit:cover;
+  width:180px;
+  height:180px;
+  object-fit:contain;
+  border-radius:50%;
+  margin-bottom:15px;
+  filter:drop-shadow(0 0 20px gold);
 }
 
+.hero h1{
+  color:#ffd700;
+  font-size:30px;
+  text-shadow:0 0 15px gold;
+}
 
+.hero h2{
+  color:white;
+  font-size:22px;
+  margin-top:10px;
+}
 
-/* FEATURES */
+.hero p{
+  color:#ddd;
+  font-size:16px;
+  margin-top:8px;
+}
+
 
 .features{
-padding:50px 20px;
-background:
-linear-gradient(135deg,#050505,#1b1200);
-text-align:center;
+  padding:30px 15px;
 }
-
 
 .features h2,
-.videos h2,
-.contact h2{
-font-size:38px;
-color:#ffd700;
-margin-bottom:35px;
-text-shadow:
-0 0 10px #ffd700,
-0 0 25px #ffb700;
+.video h2,
+.whatsapp h2{
+  color:#ffd700;
+  font-size:30px;
+  margin-bottom:25px;
+  text-shadow:0 0 15px gold;
 }
 
-
-
-/* FEATURE GRID */
 
 .feature-container{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:25px;
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:15px;
 }
 
 
-
-/* CARD */
-
 .feature-card{
-height:190px;
-background:
-linear-gradient(145deg,#202020,#080808);
-
-border:2px solid #ffd700;
-border-radius:30px;
-
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-
-text-decoration:none;
-color:white;
-
-box-shadow:
-0 0 20px #ffd70055,
-inset 0 0 20px #ffffff10;
-
-transition:.4s;
+  background:#111;
+  border:2px solid #ffd700;
+  border-radius:20px;
+  padding:20px 10px;
+  text-decoration:none;
+  color:white;
+  box-shadow:0 0 20px rgba(255,215,0,.5);
+  transition:.3s;
 }
 
 
 .feature-card:hover{
-transform:translateY(-12px) scale(1.03);
-
-box-shadow:
-0 0 40px #ffd700,
-inset 0 0 25px #ffd70055;
+  transform:scale(1.05);
 }
 
-
-
-/* ROUND ICON */
 
 .feature-icon{
-
-width:85px;
-height:85px;
-
-border-radius:50%;
-
-display:flex;
-align-items:center;
-justify-content:center;
-
-font-size:40px;
-
-background:
-linear-gradient(145deg,#ffd700,#8a6500);
-
-color:#000;
-
-box-shadow:
-0 0 25px #ffd700,
-inset 0 0 15px white;
-
-margin-bottom:18px;
-
+  font-size:35px;
+  margin-bottom:10px;
 }
-
 
 
 .feature-card h3{
-font-size:20px;
+  color:white;
+  font-size:15px;
 }
 
 
-
-/* VIDEO */
-
-.videos{
-
-padding:50px 20px;
-background:#000;
-text-align:center;
-
+.video{
+  padding:30px 10px;
 }
 
 
-.video-box{
-
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:20px;
-
+.video-container{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:15px;
 }
 
 
-.video-box iframe{
-
-width:100%;
-height:220px;
-
-border-radius:25px;
-
-border:2px solid #ffd700;
-
-box-shadow:
-0 0 25px #ffd70055;
-
+.video iframe{
+  width:100%;
+  height:180px;
+  border-radius:15px;
+  border:2px solid gold;
 }
 
 
-
-/* CONTACT */
-
-.contact{
-
-padding:40px 20px;
-text-align:center;
-background:#090909;
-
+.whatsapp{
+  padding:30px;
 }
 
 
-.contact a{
-
-display:inline-block;
-
-margin:10px;
-
-padding:15px 25px;
-
-border-radius:30px;
-
-background:#ffd700;
-
-color:#000;
-
-text-decoration:none;
-
-font-weight:bold;
-
-box-shadow:0 0 20px #ffd700;
-
+.whatsapp a{
+  display:inline-block;
+  background:#ffd700;
+  color:black;
+  padding:12px 20px;
+  margin:8px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+  box-shadow:0 0 15px gold;
 }
 
 
+a{
+  color:white;
+}
 
-/* MOBILE */
 
-@media(max-width:900px){
+@media(max-width:600px){
 
 .feature-container{
-grid-template-columns:repeat(2,1fr);
+ grid-template-columns:repeat(2,1fr);
 }
 
-
-.video-box{
-grid-template-columns:repeat(2,1fr);
+.hero h1{
+ font-size:24px;
 }
 
-}
-
-
-
-@media(max-width:500px){
-
-.feature-card{
-height:160px;
-}
-
-
-.feature-icon{
-width:65px;
-height:65px;
-font-size:30px;
-}
-
-
-.feature-card h3{
-font-size:16px;
-}
-
-
-.video-box{
-grid-template-columns:1fr;
-}
-
-
-.features h2,
-.videos h2,
-.contact h2{
-font-size:28px;
+.video-container{
+ grid-template-columns:1fr;
 }
 
 }
