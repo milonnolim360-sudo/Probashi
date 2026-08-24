@@ -3,238 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>বাংলাদেশ প্রবাসী মঞ্চ ফাউন্ডেশন</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Bangladesh Probashi Moncho Foundation</title>
     <style>
         body {
-            background: radial-gradient(circle, #1a1a1a 0%, #000000 100%);
-            color: #fff;
-            font-family: 'Segoe UI', Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+            background: radial-gradient(circle, #001d3d 0%, #000000 100%);
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-align: center;
+            margin: 0;
+            padding: 20px;
         }
 
         .container {
-            max-width: 500px;
-            margin: 20px auto;
-            padding: 20px;
+            max-width: 600px;
+            margin: auto;
             border: 2px solid #d4af37;
-            border-radius: 15px;
-            background: rgba(0, 0, 0, 0.9);
-            box-shadow: 0 0 30px rgba(212, 175, 55, 0.4);
+            padding: 20px;
+            border-radius: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 20px #d4af37;
         }
 
-        header {
-            border-bottom: 2px solid #d4af37;
-            padding-bottom: 15px;
-            margin-bottom: 20px;
+        .header img {
+            width: 100px;
+            animation: pulse 2s infinite;
         }
 
-        h1 {
-            color: #ffd700;
-            font-size: 24px;
-            margin: 10px 0 5px 0;
-            text-shadow: 2px 2px 4px #000;
-        }
+        h1 { color: #d4af37; text-shadow: 2px 2px 5px #000; font-size: 24px; }
+        h2 { color: #fff; font-size: 18px; margin-bottom: 30px; }
 
-        .subtitle {
-            font-size: 14px;
-            letter-spacing: 1px;
-            color: #eee;
-        }
-
-        .info {
-            font-size: 13px;
-            color: #d4af37;
-            margin-top: 10px;
-        }
-
-        .section-title {
-            color: #ffd700;
-            font-weight: bold;
-            margin: 25px 0 15px 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-        }
-
-        .section-title::before, .section-title::after {
-            content: "";
-            height: 2px;
-            width: 50px;
-            background: linear-gradient(to right, transparent, #ffd700);
-        }
-        .section-title::after { background: linear-gradient(to left, transparent, #ffd700); }
-
-        /* Features Grid */
         .grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 12px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
         }
 
-        .icon-box {
-            background: linear-gradient(145deg, #222, #000);
+        .feature-card {
+            background: linear-gradient(145deg, #1a1a1a, #000);
             border: 1px solid #d4af37;
-            border-radius: 10px;
-            padding: 12px 5px;
+            padding: 15px;
+            border-radius: 15px;
             text-decoration: none;
             color: white;
-            transition: 0.3s;
             display: flex;
             flex-direction: column;
             align-items: center;
-            font-size: 10px;
-        }
-
-        .icon-box:hover {
-            background: #d4af37;
-            color: #000;
-            transform: translateY(-3px);
-        }
-
-        .icon-box i {
-            font-size: 26px;
-            margin-bottom: 6px;
-        }
-
-        /* bKash Highlight Button */
-        .bkash-section {
-            margin: 20px 0;
-        }
-
-        .bkash-btn {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: linear-gradient(to right, #d12053, #e2136e);
-            border: 2px solid #fff;
-            border-radius: 12px;
-            padding: 12px 20px;
-            cursor: pointer;
             transition: 0.3s;
+            animation: float 3s infinite ease-in-out;
         }
 
-        .bkash-btn:active { transform: scale(0.95); }
-
-        .bkash-content { text-align: left; }
-        .bkash-title { font-weight: bold; font-size: 16px; display: block; }
-        .bkash-num { font-size: 14px; opacity: 0.9; }
-
-        /* WhatsApp List */
-        .wa-btn {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: #111;
-            border: 1px solid #25d366;
-            border-radius: 12px;
-            padding: 12px 20px;
-            margin: 10px 0;
-            text-decoration: none;
-            color: #fff;
+        .feature-card:hover {
+            transform: scale(1.05);
+            background: #d4af37;
+            color: black;
         }
 
-        .wa-btn i { color: #25d366; font-size: 22px; }
+        .bkash {
+            grid-column: span 2;
+            background: #e2136e;
+            border: none;
+            font-weight: bold;
+            font-size: 20px;
+        }
 
-        footer {
+        .whatsapp-section {
             margin-top: 30px;
-            font-size: 11px;
-            color: #777;
-            border-top: 1px solid #333;
-            padding-top: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .wa-btn {
+            background: #25d366;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Animations */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 0px #d4af37; }
+            50% { transform: scale(1.1); box-shadow: 0 0 20px #d4af37; }
+            100% { transform: scale(1); box-shadow: 0 0 0px #d4af37; }
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #d4af37;
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <header>
+    <div class="header">
         <h1>বাংলাদেশ প্রবাসী মঞ্চ ফাউন্ডেশন</h1>
-        <div class="subtitle">BANGLADESH PROBASHI MONCHO FOUNDATION</div>
-        <div class="info">
-            <i class="fas fa-map-marker-alt"></i> কুয়ালালামপুর, মালয়েশিয়া <br>
-            <i class="far fa-calendar-alt"></i> স্থাপিত: ০১.০১.২০২৬
-        </div>
-    </header>
-
-    <!-- bKash Button -->
-    <div class="bkash-section">
-        <div class="bkash-btn" onclick="copyNumber('+8801928807515')">
-            <div class="bkash-content">
-                <span class="bkash-title"><i class="fas fa-wallet"></i> বিকাশ (পার্সোনাল)</span>
-                <span class="bkash-num">+8801928807515</span>
-            </div>
-            <span style="font-size: 10px; background: rgba(255,255,255,0.2); padding: 5px 10px; border-radius: 5px;">নম্বর কপি করুন</span>
-        </div>
+        <h2>BANGLADESH PROBASHI MONCHO FOUNDATION</h2>
+        <p>স্থাপিত : 01.01.2026 | কলারাপুর মালয়েশিয়া</p>
     </div>
 
-    <div class="section-title">FEATURES</div>
-    
     <div class="grid">
-        <a href="https://www.facebook.com/share/1AmwQ6uynF/" class="icon-box">
-            <i class="fab fa-facebook" style="color: #1877F2;"></i>
-            <span>FB Page</span>
-        </a>
-        <a href="https://www.youtube.com/@Bangladeshprobashifundclubf" class="icon-box">
-            <i class="fab fa-youtube" style="color: #FF0000;"></i>
-            <span>YouTube</span>
-        </a>
-        <a href="https://tiktok.com/@md.rafik7854" class="icon-box">
-            <i class="fab fa-tiktok"></i>
-            <span>TikTok</span>
-        </a>
-        <a href="https://www.facebook.com/share/g/1LGXj4cECY/" class="icon-box">
-            <i class="fas fa-users" style="color: #4267B2;"></i>
-            <span>FB Group</span>
+        <!-- bKash Feature -->
+        <a href="tel:+8801961704927" class="feature-card bkash">
+            <span>bKash Payment</span>
+            <span>+8801961704927</span>
         </a>
 
-        <a href="https://m.me/j/AbazuYGAWNXaKYj3/" class="icon-box">
-            <i class="fab fa-facebook-messenger" style="color: #00B2FF;"></i>
-            <span>Messenger</span>
-        </a>
-        <a href="https://chat.whatsapp.com/D09urUItfkdEjiVtqgIbY7" class="icon-box">
-            <i class="fab fa-whatsapp-square" style="color: #25D366;"></i>
-            <span>WA Group</span>
-        </a>
-        <a href="https://everify.bdris.gov.bd/" class="icon-box">
-            <i class="fas fa-shield-alt" style="color: #4CAF50;"></i>
-            <span>BDRIS</span>
-        </a>
-        <a href="https://www.expatservicesmy.com/ESKLPublicportal/Appointment/BookAppointment" class="icon-box">
-            <i class="fas fa-globe" style="color: #00aaff;"></i>
-            <span>Expats</span>
-        </a>
+        <!-- Features -->
+        <a href="https://www.facebook.com/share/1AmwQ6uynF/" class="feature-card">Facebook Page</a>
+        <a href="https://www.youtube.com/@Bangladeshprobashifundclubf" class="feature-card">YouTube Channel</a>
+        <a href="https://tiktok.com/@md.rafik7854" class="feature-card">TikTok</a>
+        <a href="https://www.facebook.com/share/g/1LGXj4cECY/" class="feature-card">Facebook Group</a>
+        <a href="https://m.me/j/AbazuYGAWNXaKYj3/" class="feature-card">Messenger Group</a>
+        <a href="https://everify.bdris.gov.bd/" class="feature-card">BDRIS Verify</a>
+        <a href="https://www.expatservicesmy.com/ESKLPublicportal/Appointment/BookAppointment" class="feature-card">Expat Services</a>
+        <a href="https://chat.whatsapp.com/D09urUItfkdEjiVtqgIbY7" class="feature-card">WhatsApp Group</a>
     </div>
 
-    <div class="section-title">WHATSAPP CONTACT</div>
-    
     <div class="whatsapp-section">
-        <a href="https://wa.me/qr/5SBSJ55KMO7CB1" class="wa-btn">
-            <i class="fab fa-whatsapp"></i>
-            <span>WhatsApp 1</span>
-            <i class="fas fa-chevron-right" style="font-size: 12px; color: #555;"></i>
-        </a>
-        <a href="https://wa.me/message/FQOUHFGB6I3BG1" class="wa-btn">
-            <i class="fab fa-whatsapp"></i>
-            <span>WhatsApp 2</span>
-            <i class="fas fa-chevron-right" style="font-size: 12px; color: #555;"></i>
-        </a>
+        <a href="https://wa.me/8801928807515" class="wa-btn">Admin 1</a>
+        <a href="https://wa.me/message/FQOUHFGB6I3BG1" class="wa-btn">Admin 2</a>
     </div>
 
-    <footer>
-        &copy; 2026 বাংলাদেশ প্রবাসী মঞ্চ ফাউন্ডেশন | মালয়েশিয়া
-    </footer>
+    <div class="footer">
+        <p>“ঐক্য • সেবা • উন্নয়ন”</p>
+        <p>Together We Build a Stronger Expat Community</p>
+    </div>
 </div>
-
-<script>
-    function copyNumber(num) {
-        navigator.clipboard.writeText(num);
-        alert("বিকাশ নাম্বার কপি হয়েছে: " + num);
-    }
-</script>
 
 </body>
 </html>
