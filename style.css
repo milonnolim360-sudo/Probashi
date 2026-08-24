@@ -82,11 +82,15 @@ body {
   }
 }
 
+/* =========================
+   COMPANY NAME
+========================= */
+
 .hero h1 {
   color: #ffd700;
   font-size: 30px;
   line-height: 1.35;
-  margin: 5px 0 15px;
+  margin: 5px 0 10px;
   text-shadow:
     0 0 5px #ffd700,
     0 0 15px #ffd700,
@@ -95,21 +99,30 @@ body {
   z-index: 2;
 }
 
+/* =========================
+   ENGLISH NAME
+========================= */
+
 .hero h2 {
   color: #fff;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 1.3;
-  margin-top: 10px;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
+  margin-top: 5px;
+  text-shadow:
+    0 0 10px rgba(255, 255, 255, 0.25);
   position: relative;
   z-index: 2;
 }
 
+/* =========================
+   ADDRESS + ESTABLISHED
+========================= */
+
 .hero p {
   color: #ddd;
-  font-size: 18px;
-  line-height: 1.7;
-  margin-top: 8px;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 5px;
   position: relative;
   z-index: 2;
 }
@@ -498,7 +511,11 @@ footer p {
   }
 
   .hero h2 {
-    font-size: 25px;
+    font-size: 23px;
+  }
+
+  .hero p {
+    font-size: 16px;
   }
 }
 
@@ -518,16 +535,25 @@ footer p {
     margin-bottom: 12px;
   }
 
+  /* বাংলা কোম্পানির নাম */
   .hero h1 {
-    font-size: 25px;
+    font-size: 24px;
+    line-height: 1.35;
+    margin-bottom: 8px;
   }
 
+  /* English name */
   .hero h2 {
-    font-size: 23px;
+    font-size: 21px;
+    line-height: 1.3;
+    margin-top: 4px;
   }
 
+  /* ঠিকানা + স্থাপিত */
   .hero p {
-    font-size: 17px;
+    font-size: 15px;
+    line-height: 1.55;
+    margin-top: 4px;
   }
 
   .features,
@@ -598,6 +624,10 @@ footer p {
 
   .hero h2 {
     font-size: 20px;
+  }
+
+  .hero p {
+    font-size: 14px;
   }
 
   .features h2,
