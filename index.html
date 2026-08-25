@@ -3,17 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>বাংলাদেশ প্রবাসী ক্লাব</title>
-    <link rel="stylesheet" href="style.css">
+    <title>বাংলাদেশ প্রবাসী মঞ্চ ফাউন্ডেশন</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1b0933, #32125a, #100421);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 10px;
+        }
+
+        .container {
+            background: rgba(50, 18, 90, 0.5);
+            backdrop-filter: blur(15px);
+            border: 2px solid #ffd700;
+            border-radius: 20px;
+            padding: 25px 20px;
+            max-width: 550px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7), 0 0 20px rgba(255, 215, 0, 0.25);
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        /* Banner Styling */
+        .banner-box {
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 215, 0, 0.5);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        }
+
+        .banner-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* 3D Round Logo Styling */
+        .logo-box {
+            width: 120px;
+            height: 120px;
+            margin: -50px auto 15px auto;
+            position: relative;
+            border-radius: 50%;
+            border: 3px solid #ffd700;
+            box-shadow: 0 0 25px rgba(255, 215, 0, 0.7), 0 8px 20px rgba(0,0,0,0.6);
+            background: #1b0933;
+        }
+
+        .logo-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        /* Titles */
+        .bangla-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ffd700;
+            text-shadow: 
+                0 2px 4px rgba(0,0,0,0.8),
+                0 0 10px rgba(255, 215, 0, 0.3);
+            margin-bottom: 5px;
+            line-height: 1.3;
+        }
+
+        .english-title {
+            font-size: 0.85rem;
+            color: #e2b6ff;
+            letter-spacing: 1.5px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+        }
+
+        /* bKash Section */
+        .bkash-card {
+            background: linear-gradient(145deg, #e2136e, #b80c55);
+            border-radius: 12px;
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            box-shadow: 0 8px 20px rgba(226, 19, 110, 0.5);
+            margin-bottom: 25px;
+            transition: transform 0.3s ease;
+        }
+
+        .bkash-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .bkash-icon {
+            width: 35px;
+            height: 35px;
+            background: #ffffff;
+            color: #e2136e;
+            font-weight: bold;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+        }
+
+        .bkash-text {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        /* Buttons */
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .btn-link {
+            display: block;
+            padding: 12px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 600;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .btn-link:hover {
+            background: #ffd700;
+            color: #1b0933;
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+            transform: scale(1.02);
+        }
+
+        .btn-gov {
+            background: rgba(155, 81, 224, 0.2);
+            border-color: #a855f7;
+        }
+
+        .btn-gov:hover {
+            background: #a855f7;
+            color: #ffffff;
+            box-shadow: 0 0 15px rgba(168, 85, 247, 0.6);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
 </head>
 <body>
 
     <div class="container">
-        <!-- ৩ডি বাংলা নাম (উপরে) -->
-        <h1 class="bangla-title">বাংলাদেশ প্রবাসী ফান্ড ক্লাব</h1>
-        
-        <!-- ইংরেজি নাম (নিচে) -->
-        <p class="english-title">Bangladesh Probashi Fund Club</p>
+        <!-- থাম্বনেল ব্যানার -->
+        <div class="banner-box">
+            <img src="banner.png" alt="বাংলাদেশ প্রবাসী মঞ্চ ফাউন্ডেশন ব্যানার" class="banner-img">
+        </div>
+
+        <!-- ৩ডি বৃত্তাকার লোগো -->
+        <div class="logo-box">
+            <img src="logo.png" alt="বাংলাদেশ প্রবাসী মঞ্চ ফাউন্ডেশন লোগো" class="logo-img">
+        </div>
+
+        <!-- ৩ডি বাংলা ও ইংরেজি নাম -->
+        <h1 class="bangla-title">বাংলাদেশ প্রবাসী মঞ্চ ফাউন্ডেশন</h1>
+        <p class="english-title">BANGLADESH PROBASHI MONCHO FOUNDATION</p>
 
         <!-- বিকাশ আইকন ও নম্বর -->
         <div class="bkash-card">
@@ -21,11 +195,13 @@
             <div class="bkash-text">বিকাশ: +8801961704927</div>
         </div>
 
-        <!-- প্রয়োজনীয় লিংকের লিস্ট -->
+        <!-- প্রয়োজনীয় লিঙ্কসমূহ -->
         <div class="links-container">
             <a href="https://www.facebook.com/share/g/1LGXj4cECY/" class="btn-link" target="_blank">অফিসিয়াল ফেসবুক গ্রুপ</a>
             <a href="https://www.youtube.com/@Bangladeshprobashifundclubf" class="btn-link" target="_blank">ইউটিউব চ্যানেল</a>
-            <a href="https://chat.whatsapp.com/D09urUItfkdEjiVtqgIbY7" class="btn-link" target="_blank">হোয়াটসঅ্যাপ গ্রুপ</a>
+            <a href="https://chat.whatsapp.com/D09urUItfkdEjiVtqgIbY7" class="btn-link" target="_blank">হোয়াটসঅ্যাপ গ্রুপ (১)</a>
+            <a href="https://chat.whatsapp.com/HcEMStEP3un4uYDBBfH5b0" class="btn-link" target="_blank">হোয়াটসঅ্যাপ গ্রুপ (২)</a>
+            <a href="https://chat.whatsapp.com/Jl7W0RXQjEI7Mhgj5riBhu" class="btn-link" target="_blank">হোয়াটসঅ্যাপ গ্রুপ (৩)</a>
             <a href="https://wa.me/8801928807515" class="btn-link" target="_blank">হোয়াটসঅ্যাপ যোগাযোগ (+8801928807515)</a>
             <a href="https://everify.bdris.gov.bd/" class="btn-link btn-gov" target="_blank">জন্ম নিবন্ধন যাচাই (BDRIS)</a>
             <a href="https://www.expatservicesmy.com/ESKLPublicportal/Appointment/BookAppointment" class="btn-link btn-gov" target="_blank">Expat Services KL Appointment</a>
