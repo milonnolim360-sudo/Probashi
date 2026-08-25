@@ -1,67 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bangladesh Probashi Moncho Foundation</title>
+    <title>বাংলাদেশ প্রবাসী মঞ্চ ফাউন্ডেশন</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', Arial, sans-serif;
         }
 
         body {
-            background-color: #0b0218;
-            background-image: linear-gradient(135deg, #0b0218 0%, #1f073b 50%, #0b0218 100%);
+            background: linear-gradient(135deg, #0b0218 0%, #1f073b 50%, #0b0218 100%);
             color: #ffffff;
             min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 15px;
+            padding: 20px 10px;
         }
 
         .main-container {
-            background: rgba(20, 5, 45, 0.85);
-            border: 3px solid #ffd700;
-            border-radius: 25px;
-            max-width: 600px;
+            background: rgba(20, 5, 45, 0.9);
+            border: 2px solid #ffd700;
+            border-radius: 20px;
+            max-width: 650px;
             width: 100%;
-            padding: 20px;
-            box-shadow: 0 0 40px rgba(255, 215, 0, 0.3), inset 0 0 20px rgba(255, 215, 0, 0.1);
+            padding: 25px 15px;
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
             text-align: center;
         }
 
-        /* Banner Styling */
-        .banner-box {
-            width: 100%;
-            border-radius: 15px;
-            overflow: hidden;
-            border: 2px solid #ffd700;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.6);
-            margin-bottom: 20px;
-        }
-
-        .banner-box img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        /* Logo Styling */
+        /* ১. লোগো */
         .logo-box {
-            width: 110px;
-            height: 110px;
-            margin: -65px auto 15px auto;
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 15px auto;
             border-radius: 50%;
             border: 3px solid #ffd700;
-            background: #0b0218;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.7);
             overflow: hidden;
-            box-shadow: 0 0 25px rgba(255, 215, 0, 0.8), 0 8px 15px rgba(0,0,0,0.8);
-            position: relative;
-            z-index: 2;
+            background: #000;
         }
 
         .logo-box img {
@@ -70,200 +51,152 @@
             object-fit: cover;
         }
 
-        /* Titles */
+        /* ২. সংগঠনের নাম ও তথ্য */
         .bangla-title {
             font-size: 1.8rem;
-            font-weight: 800;
+            font-weight: bold;
             color: #ffd700;
-            text-shadow: 0 2px 8px rgba(0,0,0,0.9), 0 0 15px rgba(255, 215, 0, 0.4);
             margin-bottom: 5px;
+            text-shadow: 0 2px 5px rgba(0,0,0,0.8);
         }
 
         .english-title {
             font-size: 0.85rem;
             color: #e2b6ff;
-            letter-spacing: 1.5px;
-            font-weight: 700;
+            letter-spacing: 1px;
+            font-weight: 600;
             text-transform: uppercase;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }
 
         .meta-info {
-            display: inline-block;
-            background: rgba(255, 215, 0, 0.1);
-            border: 1px solid #ffd700;
-            padding: 6px 15px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            color: #ffd700;
+            font-size: 0.9rem;
+            color: #ffffff;
             margin-bottom: 20px;
-            font-weight: 600;
+            font-weight: 500;
         }
 
-        /* Section Headings */
-        .section-title {
-            font-size: 1.2rem;
-            color: #ffd700;
-            border-bottom: 2px solid #ffd700;
-            padding-bottom: 5px;
-            margin: 25px 0 15px 0;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            text-shadow: 0 2px 5px rgba(0,0,0,0.8);
+        /* ৩. সবুজ, লাল, হলুদ দাগ */
+        .divider-lines {
+            width: 100%;
+            margin: 20px 0 25px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
         }
 
-        /* Grid Icons (13 Features) */
+        .line-green { height: 3px; background-color: #006a4e; width: 100%; }
+        .line-red   { height: 3px; background-color: #f42a41; width: 100%; }
+        .line-yellow{ height: 3px; background-color: #ffd700; width: 100%; }
+
+        /* ৪. আইকন গ্রিড (এক সারিতে ৪টি) */
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 12px;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-bottom: 30px;
         }
 
         .feature-card {
-            background: linear-gradient(145deg, #180536, #2d0a5e);
-            border: 2px solid #ffd700;
-            border-radius: 14px;
-            padding: 12px 8px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid #ffd700;
+            border-radius: 12px;
+            padding: 10px 5px;
             text-decoration: none;
             color: #ffffff;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            position: relative;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
             transition: all 0.3s ease;
         }
 
         .feature-card:hover {
-            transform: translateY(-4px);
-            background: linear-gradient(145deg, #ffd700, #ffa500);
-            color: #0b0218;
-            box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
-        }
-
-        .card-number {
-            position: absolute;
-            top: 4px;
-            left: 6px;
-            background: #ffd700;
-            color: #0b0218;
-            font-size: 0.65rem;
-            font-weight: bold;
-            width: 18px;
-            height: 18px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .feature-card:hover .card-number {
-            background: #0b0218;
-            color: #ffd700;
+            transform: translateY(-3px);
+            background: rgba(255, 215, 0, 0.2);
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
         }
 
         .card-icon {
-            font-size: 1.5rem;
-            margin-bottom: 5px;
+            width: 32px;
+            height: 32px;
+            margin-bottom: 6px;
         }
 
         .card-label {
-            font-size: 0.72rem;
-            font-weight: 700;
+            font-size: 0.65rem;
+            font-weight: bold;
             text-align: center;
             text-transform: uppercase;
-            line-height: 1.2;
+            line-height: 1.1;
         }
 
-        /* Video Gallery Grid */
+        /* ৫. ভিডিও গ্যালারি (এক সারিতে ৪টি) */
+        .section-heading {
+            color: #ffd700;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            border-bottom: 1px dashed #ffd700;
+            padding-bottom: 5px;
+        }
+
         .video-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+            margin-bottom: 30px;
         }
 
-        .video-thumb {
-            background: #180536;
-            border: 1px solid #ffd700;
-            border-radius: 10px;
-            overflow: hidden;
+        .video-box {
             position: relative;
-            aspect-ratio: 16/9;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-            text-decoration: none;
+            width: 100%;
+            padding-bottom: 56.25%;
+            height: 0;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #ffd700;
         }
 
-        .play-icon {
+        .video-box iframe {
             position: absolute;
-            font-size: 1.8rem;
-            color: #ff0000;
-            background: #fff;
-            border-radius: 50%;
-            width: 35px;
-            height: 35px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 0 10px rgba(0,0,0,0.8);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
         }
 
-        /* Contact Section */
-        .contact-grid {
+        /* ৬. যোগাযোগ বাটন (ডান থেকে বামে) */
+        .contact-container {
             display: flex;
-            flex-direction: column;
             gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
         .contact-btn {
-            background: linear-gradient(135deg, #10b981, #059669);
-            border: 2px solid #34d399;
+            background: #25d366;
             color: #ffffff;
-            padding: 12px;
-            border-radius: 12px;
+            padding: 10px 15px;
+            border-radius: 20px;
             text-decoration: none;
             font-weight: bold;
-            font-size: 0.95rem;
+            font-size: 0.85rem;
             display: flex;
             align-items: center;
-            justify-content: center;
-            gap: 10px;
-            box-shadow: 0 5px 15px rgba(16, 185, 129, 0.4);
-            transition: all 0.3s ease;
+            gap: 6px;
+            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.4);
+            transition: 0.3s;
         }
 
         .contact-btn:hover {
-            background: #34d399;
-            color: #0b0218;
-            box-shadow: 0 0 20px rgba(52, 211, 153, 0.8);
-            transform: scale(1.02);
+            transform: scale(1.05);
+            background: #1eb854;
         }
 
-        /* Footer Motto */
-        .footer-motto {
-            margin-top: 25px;
-            font-size: 0.8rem;
-            color: #ffd700;
-            letter-spacing: 2px;
-            font-weight: 700;
-            text-transform: uppercase;
-        }
-
-        .footer-sub {
-            font-size: 0.7rem;
-            color: #b898ff;
-            margin-top: 4px;
-        }
-
-        /* Responsive adjustments for mobile */
-        @media (max-width: 480px) {
-            .features-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .video-grid {
+        @media (max-width: 500px) {
+            .features-grid, .video-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
@@ -272,135 +205,83 @@
 <body>
 
     <div class="main-container">
-        <!-- Top Banner -->
-        <div class="banner-box">
-            <img src="banner.png" alt="Banner">
-        </div>
-
-        <!-- Round Logo -->
+        
+        <!-- ১. লোগো -->
         <div class="logo-box">
-            <img src="logo.png" alt="Logo">
+            <img src="logo.png" alt="সংগঠন লোগো">
         </div>
 
-        <!-- Titles -->
+        <!-- ২. নাম ও বিস্তারিত -->
         <h1 class="bangla-title">বাংলাদেশ প্রবাসী মঞ্চ ফাউন্ডেশন</h1>
         <p class="english-title">BANGLADESH PROBASHI MONCHO FOUNDATION</p>
-        
-        <div class="meta-info">
-            📍 Location: Kalarapur, Malaysia &nbsp;|&nbsp; 📅 Established: 01.01.2026
+        <p class="meta-info">স্থান: কলারাপুর, মালয়েশিয়া &nbsp;|&nbsp; স্থাপিত: 01.01.2025</p>
+
+        <!-- ৩. সবুজ, লাল, হলুদ দাগ -->
+        <div class="divider-lines">
+            <div class="line-green"></div>
+            <div class="line-red"></div>
+            <div class="line-yellow"></div>
         </div>
 
-        <!-- Features Section (13 Buttons) -->
-        <div class="section-title">Features</div>
+        <!-- ৪. ৪টি করে সোশ্যাল আইকন -->
         <div class="features-grid">
             <a href="https://www.facebook.com/share/1AmwQ6uynF/" class="feature-card" target="_blank">
-                <span class="card-number">1</span>
-                <span class="card-icon">🌐</span>
+                <svg class="card-icon" viewBox="0 0 24 24" fill="#1877F2"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
                 <span class="card-label">Facebook Page</span>
             </a>
+
             <a href="https://www.facebook.com/share/g/1LGXj4cECY/" class="feature-card" target="_blank">
-                <span class="card-number">2</span>
-                <span class="card-icon">👥</span>
+                <svg class="card-icon" viewBox="0 0 24 24" fill="#1877F2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
                 <span class="card-label">Facebook Group</span>
             </a>
-            <a href="https://m.me/j/AbazuYGAWNXaKYj3/?send_source=gc%3Acopy_invite_link_c" class="feature-card" target="_blank">
-                <span class="card-number">3</span>
-                <span class="card-icon">💬</span>
-                <span class="card-label">Messenger Group</span>
+
+            <a href="https://m.me/j/AbazuYGAWNXaKYj3/" class="feature-card" target="_blank">
+                <svg class="card-icon" viewBox="0 0 24 24" fill="#0084FF"><path d="M12 0C5.373 0 0 4.974 0 11.111c0 3.498 1.744 6.614 4.469 8.654V24l4.088-2.242c1.083.3 2.227.462 3.443.462 6.627 0 12-4.975 12-11.111C24 4.974 18.627 0 12 0zm1.191 14.963l-3.055-3.26-5.963 3.26 6.559-6.96 3.127 3.26 5.89-3.26-6.558 6.96z"/></svg>
+                <span class="card-label">Messenger</span>
             </a>
+
             <a href="https://www.youtube.com/@Bangladeshprobashifundclubf" class="feature-card" target="_blank">
-                <span class="card-number">4</span>
-                <span class="card-icon">▶️</span>
+                <svg class="card-icon" viewBox="0 0 24 24" fill="#FF0000"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
                 <span class="card-label">YouTube Channel</span>
             </a>
+
             <a href="https://tiktok.com/@md.rafik7854" class="feature-card" target="_blank">
-                <span class="card-number">5</span>
-                <span class="card-icon">🎵</span>
+                <svg class="card-icon" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.29 0 .58.04.85.12V9.36a6.33 6.33 0 0 0-1-.08A6.34 6.34 0 0 0 3 15.62a6.34 6.34 0 0 0 10.86 4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.48z"/></svg>
                 <span class="card-label">TikTok ID</span>
             </a>
+
             <a href="https://www.expatservicesmy.com/ESKLPublicportal/Appointment/BookAppointment" class="feature-card" target="_blank">
-                <span class="card-number">6</span>
-                <span class="card-icon">🏢</span>
-                <span class="card-label">ESKL Registration</span>
+                <svg class="card-icon" viewBox="0 0 24 24" fill="#A855F7"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                <span class="card-label">ESKL Services</span>
             </a>
-            <a href="https://chat.whatsapp.com/D09urUItfkdEjiVtqgIbY7?s=cl&p=a&mlu=0" class="feature-card" target="_blank">
-                <span class="card-number">7</span>
-                <span class="card-icon">🟢</span>
-                <span class="card-label">Operator WA Group</span>
-            </a>
-            <a href="https://chat.whatsapp.com/HcEMStEP3un4uYDBBfH5b0?s=cl&p=a&mlu=0" class="feature-card" target="_blank">
-                <span class="card-number">8</span>
-                <span class="card-icon">🟢</span>
-                <span class="card-label">Worker WA Group</span>
-            </a>
-            <a href="https://chat.whatsapp.com/Jl7W0RXQjEI7Mhgj5riBhu?s=qt&p=a&ilr=0" class="feature-card" target="_blank">
-                <span class="card-number">9</span>
-                <span class="card-icon">🟢</span>
-                <span class="card-label">Foundation WA Group</span>
-            </a>
-            <a href="https://wa.me/message/FQOUHFGB6I3BG1" class="feature-card" target="_blank">
-                <span class="card-number">10</span>
-                <span class="card-icon">📊</span>
-                <span class="card-label">Information Group</span>
-            </a>
+
             <a href="https://everify.bdris.gov.bd/" class="feature-card" target="_blank">
-                <span class="card-number">11</span>
-                <span class="card-icon">🛡️</span>
+                <svg class="card-icon" viewBox="0 0 24 24" fill="#10B981"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
                 <span class="card-label">E-Verify Service</span>
             </a>
+
             <a href="https://wa.me/8801961704927" class="feature-card" target="_blank">
-                <span class="card-number">12</span>
-                <span class="card-icon">💳</span>
-                <span class="card-label">bKash (+8801961704927)</span>
-            </a>
-            <a href="https://wa.me/message/OJAZRSZSSECCK1" class="feature-card" target="_blank">
-                <span class="card-number">13</span>
-                <span class="card-icon">✉️</span>
-                <span class="card-label">Contact Us</span>
+                <svg class="card-icon" viewBox="0 0 24 24" fill="#E2136E"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4V8h16v10zm-2-1h-6v-2h6v2z"/></svg>
+                <span class="card-label">bKash Payment</span>
             </a>
         </div>
 
-        <!-- Video Gallery Section -->
-        <div class="section-title">Video Gallery</div>
+        <!-- ৫. ভিডিও গ্যালারি -->
+        <div class="section-heading">ভিডিও গ্যালারি</div>
         <div class="video-grid">
-            <a href="https://youtu.be/KumLOhgtgsM?si=oH-ro60FS8RpPz_x" class="video-thumb" target="_blank">
-                <div class="play-icon">▶</div>
-            </a>
-            <a href="https://youtube.com/shorts/Uvav8yUb93c?si=2zR7gnwlw7oa1dLK" class="video-thumb" target="_blank">
-                <div class="play-icon">▶</div>
-            </a>
-            <a href="https://youtu.be/I2mc2RXCEIA?si=xqBkC22TUSBWCP68" class="video-thumb" target="_blank">
-                <div class="play-icon">▶</div>
-            </a>
-            <a href="https://youtu.be/DXB7gdJUlMw?si=GhnUKCGCrNFxZfhG" class="video-thumb" target="_blank">
-                <div class="play-icon">▶</div>
-            </a>
-            <a href="https://youtube.com/shorts/AKapV127nJg?si=TdwGYuH77yA7npxO" class="video-thumb" target="_blank">
-                <div class="play-icon">▶</div>
-            </a>
-            <a href="https://youtu.be/I2mc2RXCEIA?si=Peogg4qe6olJMPdI" class="video-thumb" target="_blank">
-                <div class="play-icon">▶</div>
-            </a>
+            <div class="video-box"><iframe src="https://www.youtube.com/embed/KumLOhgtgsM" allowfullscreen></iframe></div>
+            <div class="video-box"><iframe src="https://www.youtube.com/embed/Uvav8yUb93c" allowfullscreen></iframe></div>
+            <div class="video-box"><iframe src="https://www.youtube.com/embed/I2mc2RXCEIA" allowfullscreen></iframe></div>
+            <div class="video-box"><iframe src="https://www.youtube.com/embed/DXB7gdJUlMw" allowfullscreen></iframe></div>
         </div>
 
-        <!-- Contact Section -->
-        <div class="section-title">Contact</div>
-        <div class="contact-grid">
-            <a href="https://wa.me/8801928807515" class="contact-btn" target="_blank">
-                💬 WhatsApp Contact (+8801928807515)
-            </a>
-            <a href="https://wa.me/8801961704927" class="contact-btn" target="_blank">
-                💬 WhatsApp Contact (+8801961704927)
-            </a>
+        <!-- ৬. যোগাযোগ -->
+        <div class="section-heading">যোগাযোগ করুন</div>
+        <div class="contact-container">
+            <a href="https://wa.me/8801928807515" class="contact-btn" target="_blank">💬 +8801928807515</a>
+            <a href="https://wa.me/8801961704927" class="contact-btn" target="_blank">💬 +8801961704927</a>
         </div>
 
-        <!-- Footer Motto -->
-        <div class="footer-motto">
-            TOGETHER • UNITY • PROGRESS
-        </div>
-        <div class="footer-sub">
-            Together We Build a Stronger Expat Community
-        </div>
     </div>
 
 </body>
